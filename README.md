@@ -36,8 +36,7 @@ This model is end-to-end trained in a **CLIP-style cross-modal contrastive learn
 ### Prerequisites
 
 - Python 3.10+
-- CUDA 11.8+ (for GPU support)
-- 16GB+ GPU memory recommended
+- CUDA 11.8+
 
 ### Environment Setup
 
@@ -80,28 +79,10 @@ wandb>=0.15.0
 
 ### CT-RATE Dataset
 
-This project uses the **CT-RATE** dataset for training and evaluation. 
+This project uses the [CT-RATE](https://huggingface.co/datasets/ibrahimhamamci/CT-RATE) dataset for training and evaluation. 
 
-#### Data Structure
-
-Organize your data in the following structure:
-
-```
-/path/to/ct_rate/
-├── train/
-│   ├── volumes/          # CT scan volumes
-│   │   ├── case_001.pt   # Preprocessed CT volume
-│   │   ├── case_002.pt
-│   │   └── ...
-│   └── reports/          # Radiology reports
-│       └── reports.json
-├── val/
-│   ├── volumes/
-│   └── reports/
-└── test/
-    ├── volumes/
-    └── reports/
-```
+## Checkpoints
+You can download the checkpoints in [huggingface](https://huggingface.co/SmallBosser/REAF)
 
 #### Data Preprocessing
 
@@ -185,6 +166,7 @@ python zero_shot.py \
   --use-cxr-bert \
   --cxr-bert-path /path/to/cxr-bert
 ```
+
 
 
 
