@@ -26,7 +26,7 @@ This model is end-to-end trained in a **CLIP-style cross-modal contrastive learn
 ## 🏗️ Architecture
 
 <div align="center">
-<img src="fig/figure3.png" alt="REAF Architecture" width="90%">
+<img src="figure.png" alt="REAF Architecture" width="90%">
 </div>
 
 
@@ -185,6 +185,7 @@ python zero_shot.py \
   --use-cxr-bert \
   --cxr-bert-path /path/to/cxr-bert
 ```
+
 
 
 
